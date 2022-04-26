@@ -1,0 +1,17 @@
+// .section__container {
+//     margin: 0 auto;
+//     max-width: 1200px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+// }
+
+.section__container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+    .section__container{
+        margin: 0 auto;
+        width: 448px;
+    }
+}

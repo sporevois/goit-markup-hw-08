@@ -7,13 +7,13 @@
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Studio Main</title>
 </head>
 <body>
 <!-- Page header -->
 <header class="page-header">
- <div class="header-container">
+ <div class="section__container section__container--header">
         <nav class="nav-group">
             <a href="#" class="header-logo">
                 <span class="header-logo-colorized">Web</span>Studio
@@ -48,22 +48,26 @@
                 </a> 
             </li>
         </ul>
+    <button type="button" class="menu-btn">
+        <svg class="menu-btn__icon">
+            <use href="./images/sprite.svg#menu-icon"></use>
+        </svg>
+    </button>
  </div>
     
 </header>
 
 <main>
 <!-- Hero -->
-<section class="hero">
+<!-- <section class="hero">
     <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
     <button type="button" class="button-primary button-primary--hero" data-modal-open>Заказать услугу</button>
-</section>
+</section> -->
 
 <!-- Our advantages -->
-<section class="section">
+<!-- <section class="section">
     <div class="section__container">
         <h2 class="section__title section__title--hide">Наши преимущества</h2>
-        <!--убрать (скрыть) в CSS -->
         <ul class="advantage">
             <li class="advantage__item">
                 <div class="icon-wrapper">                
@@ -103,10 +107,10 @@
             </li>
         </ul>
     </div>
-</section>
+</section> -->
 
 <!-- Features -->
-<section class="section section--none-top">
+<!-- <section class="section section--none-top">
     <div class="section__container">
         <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="feature">
@@ -130,10 +134,10 @@
             </li>
         </ul>
     </div>
-</section>
+</section> -->
 
 <!-- Our team -->
-<section class="section section--dimm">
+<!-- <section class="section section--dimm">
     <div class="section__container">
         <h2 class="section__title">Наша команда</h2>
         <ul class="member">
@@ -287,10 +291,10 @@
             </li>
         </ul>
     </div>
-</section>
+</section> -->
 
 <!-- Our Clients -->
-<section class="section">
+<!-- <section class="section">
     <div class="section__container">
         <h2 class="section__title">Постоянные клиенты</h2>
         <ul class="client">
@@ -338,11 +342,11 @@
             </li>
         </ul>
     </div>
-</section>
+</section> -->
 </main>
 
 <!-- Footer -->
-<footer class="page-footer">
+<!-- <footer class="page-footer">
     <div class="footer-container">
         <div class="ftr-address-wrapper">
             <a href="#" class="footer-logo">
@@ -408,10 +412,10 @@
             </div>           
         </form>
     </div>
-</footer>
+</footer> -->
 
 <!-- Modal Window -->
-<div class="backdrop backdrop--is-hidden" data-modal>
+<!-- <div class="backdrop backdrop--is-hidden" data-modal>
     <div class="window">
         <button class="window__close-button" data-modal-close></button>
         <form class="form" name="order__form">
@@ -469,6 +473,6 @@
         </form>
     </div>
 </div>
-<script src="./js/modal.js"></script>
+<script src="./js/modal.js"></script> -->
 </body>
 </html>
