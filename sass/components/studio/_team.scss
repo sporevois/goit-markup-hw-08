@@ -1,0 +1,89 @@
+.section {
+    @extend %section;
+
+    &__container{
+        @extend %section__container;
+    }
+
+    &__title{
+        @extend %section__title;
+    }
+
+    &--dimm {
+        background-color: $dimm-bg-color;
+    }
+}
+.member-wrapper {
+    padding: 30px 0;
+  }  
+.member {
+    @extend %list;
+    justify-content: center;
+   
+    &__item {
+      width: 270px;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      background-color: $primary-white-color;
+    }
+    &__item + &__item {
+      margin-left: 30px;
+    }
+    &__image{
+      display: block;
+    }
+    &__name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.19;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: $title-text-color;
+    }
+    &__position {
+      @extend %text;
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 1.19;
+      text-align: center;
+    }
+}
+.socials {
+    @extend %list;
+    justify-content: center;
+  
+    &__item + &__item {
+        margin-left: 10px;
+    }
+    &__link {
+        @extend %link;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50px;
+        background-color: $soc-icon-bg-color;
+        transition: background-color $transitio-duration $trasition-timing-function;
+      }
+    &__item:hover &__link {
+        background-color: $current-item-color;
+    }
+    &__icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        fill: $primary-white-color;
+        transition: fill $transitio-duration $trasition-timing-function;
+    
+        &--grey {
+            fill: $icon-color;
+            transition: fill $transitio-duration $trasition-timing-function;
+        }
+    }
+    &__item:hover &__icon {
+        fill: $primary-white-color;
+    }
+}

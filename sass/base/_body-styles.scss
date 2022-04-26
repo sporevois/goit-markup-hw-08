@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+
+  font-family: $primary-font;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
