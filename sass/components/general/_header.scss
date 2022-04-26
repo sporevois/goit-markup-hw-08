@@ -5,13 +5,12 @@
 .contact{
     display: none;
 }
-.page-header{
-    height: 60px;
-}
-.section__container--header{
+.header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
+    outline: 1px solid red;
 }
 .header-logo{
     @extend %logo;
@@ -27,18 +26,19 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    background-color: $primary-white-color;
-    
-    
-    
+    background-color: transparent;
+    line-height: 0;
+          
     &__icon{
         display: block;
-        width: 40px;
-        height: 40px;
         fill: $title-text-color;
+        transition: fill $transitio-duration $trasition-timing-function;
+
     }
 
-
+    &:active &__icon{
+        fill: $current-item-color;
+    }
 }
 // .header-container {
 //     @extend %section__container;
