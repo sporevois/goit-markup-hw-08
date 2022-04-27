@@ -32,8 +32,6 @@
     &__icon{
         display: block;
         fill: $title-text-color;
-        transition: fill $transitio-duration $trasition-timing-function;
-
     }
 
     &:active &__icon{
