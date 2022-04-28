@@ -7,12 +7,12 @@
   padding-bottom: 118px;
   background-color: $reserv-bg-color;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/mobile/Header.webp);
+        url(../images/mobile/Hero.webp);
   
   @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-      background-image: url(../images/mobile/Header@2x.webp);
+      background-image: url(../images/mobile/Hero@2x.webp);
     }
   &__title{
     margin: 0 auto 30px;
