@@ -1,32 +1,60 @@
-.hero {
-    padding: 200px 15px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1600px;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: 1600px auto;
-    background-position: center;
-    background-color: $reserv-bg-color;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero_bg_img.jpg);
-    color: $primary-white-color;
-    text-align: center;
 
-    &__title {
-        display: inline-block;
-        max-width: 696px;
-        margin: 0 auto;
-        margin-top: 0;
-        margin-bottom: 30px;
-
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
+.hero{
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: $reserv-bg-color;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/mobile/Header.webp);
+  
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/Header@2x.webp);
     }
+  &__title{
+    margin: 0 auto 30px;
+    max-width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62; 
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
 }
+// .hero {
+//     padding: 200px 15px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     max-width: 1600px;
+//     height: 600px;
+//     background-repeat: no-repeat;
+//     background-size: 1600px auto;
+//     background-position: center;
+//     background-color: $reserv-bg-color;
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url(../images/hero_bg_img.jpg);
+//     color: $primary-white-color;
+//     text-align: center;
+
+//     &__title {
+//         display: inline-block;
+//         max-width: 696px;
+//         margin: 0 auto;
+//         margin-top: 0;
+//         margin-bottom: 30px;
+
+//         font-weight: 900;
+//         font-size: 44px;
+//         line-height: 1.36;
+//         letter-spacing: 0.06em;
+//         text-transform: uppercase;
+//     }
+// }
 .button-primary--hero {
     @extend %button-primary;
     margin: 0 auto;

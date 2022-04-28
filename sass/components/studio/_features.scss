@@ -1,18 +1,18 @@
-.section {
-    @extend %section;
+// .section {
+//     @extend %section;
 
-    &__container{
-        @extend %section__container;
-    }
+//     &__container{
+//         @extend %section__container;
+//     }
 
-    &__title{
-        @extend %section__title;
-    }
+//     &__title{
+//         @extend %section__title;
+//     }
 
-    &--none-top {
-        padding-top: 0;
-    }
-}
+//     &--none-top {
+//         padding-top: 0;
+//     }
+// }
 .feature {
     @extend %list;
     justify-content: center;

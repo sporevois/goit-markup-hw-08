@@ -1,18 +1,18 @@
-.section {
-    @extend %section;
+// .section {
+//     @extend %section;
 
-    &__container{
-        @extend %section__container;
-    }
+//     &__container{
+//         @extend %section__container;
+//     }
 
-    &__title{
-        @extend %section__title;
-    }
+//     &__title{
+//         @extend %section__title;
+//     }
 
-    &--dimm {
-        background-color: $dimm-bg-color;
-    }
-}
+//     &--dimm {
+//         background-color: $dimm-bg-color;
+//     }
+// }
 .member-wrapper {
     padding: 30px 0;
   }  

@@ -58,6 +58,10 @@
             font-size: 40px;
             line-height: 1.18;
             color: $title-text-color;
+
+            &--current{
+                color: $current-item-color;
+            }
         }
     }
     &__tel{
