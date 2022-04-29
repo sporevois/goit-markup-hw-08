@@ -1,60 +1,49 @@
-.footer-container {
-    @extend %section__container;
-    display: flex;
-    align-items: baseline;
-}
 .page-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
     background-color: $dark-bg-color;
   }
-.ftr-address-wrapper{
-    display: flex;
-    flex-direction: column;
+.ftr-address-wrapper {
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
 }
 // Logo
 .footer-logo {
     @extend %logo;
+    display: block;
     margin-bottom: 20px;
     color: $primary-white-color;
-}  
+}
 .footer-logo-colorized {
     color: $current-item-color;
-  }
-  
-// Address
-  
-.footer-address {
-    display: flex;
-    flex-flow: column;
-    margin-left: auto;
-  }
+}
 .location {
     @extend %text;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
     font-style: normal;
     line-height: 1.71;
     color: $primary-white-color;
   }
 .ftr-contact{
     @extend %list;
-    flex-flow: column;
-    
+    &__item:first-child{
+        margin-bottom: 8px;
+    }
+      
     &__link {
         @extend %link;
         font-style: normal;
         line-height: 1.71;
         color: $footer-adress-color;
-      
-        &:hover,
-        &:focus {
+
+        &:active{
             color: $primary-white-color;
         }
     }
 }
-// Socials Block
 .ftr-socials-wrapper {
-    margin-left: 70px;
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
   }
 .appeal {
     @extend %text;
@@ -63,48 +52,13 @@
     font-weight: 700;
     text-transform: uppercase;
     color: $primary-white-color;
-  }
-.socials {
-    @extend %list;
-    justify-content: center;
-  
-    &__item + &__item {
-        margin-left: 10px;
-    }
-    &__link {
-        @extend %link;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 44px;
-        height: 44px;
-        border-radius: 50px;
-        background-color: $soc-icon-bg-color;
-        transition: background-color $transitio-duration $trasition-timing-function;
-      }
-    &__item:hover &__link {
-        background-color: $current-item-color;
-    }
-    &__icon {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        fill: $primary-white-color;
-        transition: fill $transitio-duration $trasition-timing-function;
-    }
-    &__item:hover &__icon {
-        fill: $primary-white-color;
-    }
 }
-// Subscription Form
-.subscription {
-    display: flex;
-    flex-direction: column;
-    width: 570px;
-    margin-left: 93px;
-  
+.subscription{
+    display: block;
+    text-align: center;
+    
+
     &__title {
-        margin-bottom: 20px;
         line-height: 1.17;
         font-weight: 700;
         text-transform: uppercase;
@@ -112,13 +66,14 @@
     }
 }
 .signup {
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
 
     &__mail {
-        width: 358px;
+        width: 450px;
         height: 50px;
         padding-left: 16px;
+        margin: 20px 0 20px;
         font-size: 16px;
         line-height: 1.25;
         color: rgba(255, 255, 255, 0.6);
@@ -138,6 +93,149 @@
 }
 .button-primary--footer {
     @extend %button-primary;
-    margin-left: 12px;
+    margin: 0 auto;
 }
+
+// .footer-container {
+//     @extend %section__container;
+//     display: flex;
+//     align-items: baseline;
+// }
+// .page-footer {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     background-color: $dark-bg-color;
+//   }
+// .ftr-address-wrapper{
+//     display: flex;
+//     flex-direction: column;
+// }
+// // Logo
+// .footer-logo {
+//     @extend %logo;
+//     margin-bottom: 20px;
+//     color: $primary-white-color;
+// }  
+// .footer-logo-colorized {
+//     color: $current-item-color;
+//   }
+  
+// // Address
+  
+// .footer-address {
+//     display: flex;
+//     flex-flow: column;
+//     margin-left: auto;
+//   }
+// .location {
+//     @extend %text;
+//     margin-bottom: 9px;
+//     font-style: normal;
+//     line-height: 1.71;
+//     color: $primary-white-color;
+//   }
+// .ftr-contact{
+//     @extend %list;
+//     flex-flow: column;
+    
+//     &__link {
+//         @extend %link;
+//         font-style: normal;
+//         line-height: 1.71;
+//         color: $footer-adress-color;
+      
+//         &:hover,
+//         &:focus {
+//             color: $primary-white-color;
+//         }
+//     }
+// }
+// // Socials Block
+// .ftr-socials-wrapper {
+//     margin-left: 70px;
+//   }
+// .appeal {
+//     @extend %text;
+//     margin-bottom: 20px;
+//     line-height: 1.17;
+//     font-weight: 700;
+//     text-transform: uppercase;
+//     color: $primary-white-color;
+//   }
+// .socials {
+//     @extend %list;
+//     justify-content: center;
+  
+//     &__item + &__item {
+//         margin-left: 10px;
+//     }
+//     &__link {
+//         @extend %link;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         width: 44px;
+//         height: 44px;
+//         border-radius: 50px;
+//         background-color: $soc-icon-bg-color;
+//         transition: background-color $transitio-duration $trasition-timing-function;
+//       }
+//     &__item:hover &__link {
+//         background-color: $current-item-color;
+//     }
+//     &__icon {
+//         display: inline-block;
+//         width: 20px;
+//         height: 20px;
+//         fill: $primary-white-color;
+//         transition: fill $transitio-duration $trasition-timing-function;
+//     }
+//     &__item:hover &__icon {
+//         fill: $primary-white-color;
+//     }
+// }
+// // Subscription Form
+// .subscription {
+//     display: flex;
+//     flex-direction: column;
+//     width: 570px;
+//     margin-left: 93px;
+  
+//     &__title {
+//         margin-bottom: 20px;
+//         line-height: 1.17;
+//         font-weight: 700;
+//         text-transform: uppercase;
+//         color: $primary-white-color;
+//     }
+// }
+// .signup {
+//     display: flex;
+//     justify-content: center;
+
+//     &__mail {
+//         width: 358px;
+//         height: 50px;
+//         padding-left: 16px;
+//         font-size: 16px;
+//         line-height: 1.25;
+//         color: rgba(255, 255, 255, 0.6);
+//         background-color: transparent;
+//         border: 1px solid rgba(255, 255, 255, 0.3);
+//         box-sizing: border-box;
+//         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//         border-radius: 4px;
+//     }
+//     &__icon {
+//         display: inline-block;
+//         width: 24px;
+//         height: 24px;
+//         margin-left: 10px;
+//         background-color: transparent;
+//     }
+// }
+// .button-primary--footer {
+//     @extend %button-primary;
+//     margin-left: 12px;
+// }
     

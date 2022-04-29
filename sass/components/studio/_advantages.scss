@@ -1,8 +1,6 @@
 
 .advantage{
-  padding: 0;
-  margin: 60px 0;
-  list-style: none;
+@extend %list;
 
   &__title{
     margin-top: 0;
