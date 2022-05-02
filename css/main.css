@@ -168,6 +168,7 @@ body {
 }
 
 .mob-menu {
+  z-index: 2;
   position: absolute;
   top: 0;
   left: 0;
@@ -646,13 +647,22 @@ textarea:focus-visible {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
-  padding: 40px 39px 41px;
+  width: 450px;
+  height: 609px;
+  padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+.window__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #212121;
 }
 
 .window__close-button {
@@ -715,7 +725,8 @@ textarea:focus-visible {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__field__input:focus {
+.form__field__input:focus-within {
+  outline: transparent;
   border-color: #2196f3;
 }
 
@@ -785,6 +796,7 @@ textarea:focus-visible {
 }
 
 .form__comment__textarea:focus {
+  outline: transparent;
   border-color: #2196f3;
 }
 
@@ -796,9 +808,13 @@ textarea:focus-visible {
 
 .form__checkbox__label {
   display: inline-block;
+  font-size: 12px;
+  line-height: 1.17;
 }
 
 .form__checkbox__contract-link {
+  font-size: 12px;
+  line-height: 1.17;
   color: #2196f3;
 }
 
@@ -836,14 +852,23 @@ textarea:focus-visible {
 }
 
 .filter {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-bottom: 40px;
 }
 
-.filter__item + .filter__item {
-  margin-left: 8px;
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter__item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 15px;
 }
 
 .button-secondary {
