@@ -3,6 +3,10 @@
 }
 .member{
     @extend %list;
+    &__image{
+        display: block;
+        width: 100%;
+    }
 
     &__name{
         font-weight: 500;
