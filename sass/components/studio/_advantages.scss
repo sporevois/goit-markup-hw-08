@@ -1,4 +1,3 @@
-
 .advantage{
 @extend %list;
 
@@ -35,6 +34,24 @@
 .section__title--hide{
   display: none;
 }
+
+@media screen and (min-width:768px) {
+  .advantage{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .advantage__item {
+    max-width: 354px;
+  }
+  .advantage__item:nth-child(2n){
+    margin-left: 30px;
+  }
+  .advantage__item:nth-last-child(-n+2){
+  margin-bottom: 0;
+  }
+}
+
+
 // .section{
 //     @extend %section;
 
