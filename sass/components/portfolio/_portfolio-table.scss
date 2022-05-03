@@ -18,6 +18,10 @@
     &__item {
         margin: 30px auto;
         max-width: 450px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 
     &__link {
