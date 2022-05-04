@@ -48,11 +48,13 @@
     .nav-group {
         display: flex;
         align-items: center;
+        height: 60px;
     }
     .site-nav{
         display: flex;
         list-style: none;
-        margin-left: 88px;
+        height: 60px;
+        margin: 0 0 0 88px;
         padding: 0;
     }
     .site-nav__item{
@@ -70,6 +72,7 @@
         line-height: 1.14;
         letter-spacing: 0.02em;
         text-decoration: none;
+        transition: color $transitio-duration $trasition-timing-function;
     }
     .site-nav__link--current{
         color: $current-item-color;
@@ -102,6 +105,7 @@
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.02em;
+        transition: color $transitio-duration $trasition-timing-function;
         
     }
     .contact__icon{
@@ -109,6 +113,37 @@
         height: 16px;
         margin-right: 8px;
         fill: currentColor;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .header-container{
+        justify-content: start;
+    }
+    .header-logo{
+        font-size: 26px;
+    }
+    .site-nav{
+        margin-left: 93px;
+    }
+    .site-nav__link:hover,
+    .site-nav__link:focus{
+        color: $current-item-color;
+    }
+    .contact{
+        flex-direction: row;
+        // align-items: center;
+        margin-left: 305px;
+    }
+    .contact__link:hover,
+    .contact__link:focus{
+        color: $current-item-color;
+    }
+    .contact__item:first-child {
+    margin-bottom: 0px;
+    }
+    .contact__item:last-child{
+        margin-left: 30px;
     }
 }
 // .header-container {

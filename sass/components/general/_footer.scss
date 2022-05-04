@@ -55,11 +55,13 @@
     color: $primary-white-color;
 }
 .subscription{
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     
 
     &__title {
+        margin-bottom: 20px;
         line-height: 1.17;
         font-weight: 700;
         text-transform: uppercase;
@@ -74,7 +76,7 @@
         width: 450px;
         height: 50px;
         padding-left: 16px;
-        margin: 20px 0 20px;
+        margin-bottom: 20px;
         font-size: 16px;
         line-height: 1.25;
         color: rgba(255, 255, 255, 0.6);
@@ -98,11 +100,43 @@
 }
 
 @media screen and (min-width:768px) {
-    .tablet-ftr-wrapper{
+    .footer-container{
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
+}
+
+@media screen and (min-width:1200px) {
+    .footer-container {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        height: 252px;
+        padding: 60px 15px;
+    }
+    .footer-logo {
+        font-size: 26px;
+    }
+    .ftr-address-wrapper{
+        text-align: left;
+    }
+    .subscription{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .button-primary--footer {
+        margin-left: 12px;
+    }
+    .signup{
+        display: flex;
+    }
+    .signup__mail{
+        width: 358px;
+        margin-bottom: 0;
+    }
+
 }
 
 // .footer-container {

@@ -153,24 +153,48 @@
 </section>
 
 <!-- Features -->
-<section class="section section--none-top mobile-hide">
+<section class="section section--none-top">
     <div class="section__container">
         <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="feature">
             <li class="feature__item">
-                <img class="feature__image" src="./images/1-develop.jpg" alt="Процесс расработки проекта" width="370" />
+                <picture>
+                    <source srcset="
+                        ./images/desk/feature1.webp 1x, 
+                        ./images/desk/feature1@2x.webp 2x"type="image/webp"/>
+                    <source srcset="
+                        ./images/desk/feature1.jpg 1x, 
+                        ./images/desk/feature1@2x.jpg 2x" type="image/jpg"/>
+                    <img class="member__image" src="./images/mob/feature1.jpg" alt="Процесс расработки проекта">
+                </picture>
                 <div class="feature-wrapper">
                     <p class="feature__text">Десктопные приложения</p>
                 </div>
             </li>
             <li class="feature__item">
-                <img class="feature__image" src="./images/2-mobile.jpg" alt="Адаптация для мобильных устройств" width="370" />
+                <picture>
+                    <source srcset="
+                        ./images/desk/feature2.webp 1x, 
+                        ./images/desk/feature2@2x.webp 2x"type="image/webp"/>
+                    <source srcset="
+                        ./images/desk/feature2.jpg 1x, 
+                        ./images/desk/feature2@2x.jpg 2x" type="image/jpg"/>
+                    <img class="member__image" src="./images/mob/feature2.jpg" alt="Адаптация для мобильных устройств">
+                </picture>
                 <div class="feature-wrapper">
                     <p class="feature__text">Мобильные приложения</p>
                 </div>
             </li>
             <li class="feature__item">
-                <img class="feature__image" src="./images/3-design.jpg" alt="Разработка дизайна" width="370" />
+                <picture>
+                    <source srcset="
+                        ./images/desk/feature3.webp 1x, 
+                        ./images/desk/feature3@2x.webp 2x"type="image/webp"/>
+                    <source srcset="
+                        ./images/desk/feature3.jpg 1x, 
+                        ./images/desk/feature3@2x.jpg 2x" type="image/jpg"/>
+                    <img class="member__image" src="./images/mob/feature3.jpg" alt="Разработка дизайна">
+                </picture>
                 <div class="feature-wrapper">
                     <p class="feature__text">Дизайнерские решения</p>
                 </div>
@@ -470,60 +494,58 @@
 
 <!-- Footer -->
 <footer class="page-footer">
-    <div class="section__container footer-container">
-        <div class="tablet-ftr-wrapper">
-            <div class="ftr-address-wrapper">
-                <a href="#" class="footer-logo">
-                    <span class="footer-logo-colorized">Web</span>Studio
-                </a>
-                <address class="footer-address">
-                    <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
-                    <ul class="ftr-contact">
-                        <li class="ftr-contact__item"> 
-                            <a href="mailto:info@devstudio.com" class="ftr-contact__link">info@devstudio.com
-                            </a> 
-                        </li>
-                        <li class="ftr-contact__item"> 
-                            <a href="tel:+380961111111" class="ftr-contact__link">+38 096 111 11 11
-                            </a> 
-                        </li>
-                    </ul>
-                </address>
-            </div>
-            <div class="ftr-socials-wrapper">
-                <p class="appeal">присоединяйтесь</p>
-                <ul class="socials">
-                    <li class="socials__item">
-                        <a href="" class="socials__link">
-                          <svg class="socials__icon">
-                            <use href="./images/sprite.svg#instagram"></use>
-                          </svg>
-                        </a>                    
+    <div class="section__container footer-container">      
+        <div class="ftr-address-wrapper">
+            <a href="#" class="footer-logo">
+                <span class="footer-logo-colorized">Web</span>Studio
+            </a>
+            <address class="footer-address">
+                <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
+                <ul class="ftr-contact">
+                    <li class="ftr-contact__item"> 
+                        <a href="mailto:info@devstudio.com" class="ftr-contact__link">info@devstudio.com
+                        </a> 
                     </li>
-                    <li class="socials__item">
-                        <a href="" class="socials__link">
-                          <svg class="socials__icon">
-                            <use href="./images/sprite.svg#twitter"></use>
-                          </svg>
-                        </a>                    
-                    </li>
-                    <li class="socials__item">
-                        <a href="" class="socials__link">
-                          <svg class="socials__icon">
-                            <use href="./images/sprite.svg#facebook"></use>
-                          </svg>
-                        </a>                    
-                    </li>
-                    <li class="socials__item">
-                        <a href="" class="socials__link">
-                          <svg class="socials__icon">
-                            <use href="./images/sprite.svg#linkedin"></use>
-                          </svg>
-                        </a>                    
+                    <li class="ftr-contact__item"> 
+                        <a href="tel:+380961111111" class="ftr-contact__link">+38 096 111 11 11
+                        </a> 
                     </li>
                 </ul>
-            </div>
+            </address>
         </div>
+        <div class="ftr-socials-wrapper">
+            <p class="appeal">присоединяйтесь</p>
+            <ul class="socials">
+                <li class="socials__item">
+                    <a href="" class="socials__link">
+                      <svg class="socials__icon">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>                    
+                </li>
+                <li class="socials__item">
+                    <a href="" class="socials__link">
+                      <svg class="socials__icon">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>                    
+                </li>
+                <li class="socials__item">
+                    <a href="" class="socials__link">
+                      <svg class="socials__icon">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>                    
+                </li>
+                <li class="socials__item">
+                    <a href="" class="socials__link">
+                      <svg class="socials__icon">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>                    
+                </li>
+            </ul>
+        </div>       
         <form name="subscription" class="subscription">
             <label for="user_mail" class="subscription__title">Подпишитесь на рассылку</label>
             <div class="signup">

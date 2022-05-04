@@ -27,6 +27,7 @@
     }
     &__icon {
         fill: $icon-color;
+        transition: fill $transitio-duration $trasition-timing-function;
     }
     &__link:active &__icon {
       fill: $current-item-color;
@@ -49,6 +50,28 @@
   .client__link{
     width: 226px;
   }
+}
+
+@media screen and (min-width:1200px) {
+  .client{
+  flex-wrap: nowrap;
+  }
+  .client__item{
+    margin-bottom: 0;
+  }
+  .client__item + .client__item {
+    margin-left: 30px;
+  }
+  .client__link {
+    width: 170px;
+            &:hover {
+                border-color: $current-item-color;
+            }
+            &:hover .client__icon {
+              fill: $current-item-color;
+            }
+  }
+  
 }
 
 // .section {
