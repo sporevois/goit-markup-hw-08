@@ -42,12 +42,13 @@
   }
   .advantage__item {
     max-width: 354px;
-  }
-  .advantage__item:nth-child(2n){
-    margin-left: 30px;
-  }
-  .advantage__item:nth-last-child(-n+2){
-  margin-bottom: 0;
+
+    &:nth-child(2n){
+      margin-left: 30px;
+    }
+    &:nth-last-child(-n+2){
+    margin-bottom: 0;
+    }
   }
   .advantage__title {
     text-align: left;
