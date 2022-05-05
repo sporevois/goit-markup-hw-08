@@ -144,7 +144,7 @@ textarea:focus-visible {
         text-align: center;
         margin-bottom: 30px;
 
-        &__label {
+        &__lable {
             display: inline-block;
             font-size: 12px;
             line-height: 1.17;
@@ -189,6 +189,20 @@ textarea:focus-visible {
             margin: 0 auto;
         }
     }
+
+@media screen and (min-width: 1200px) {
+    .window{
+        width: 528px;
+        height: 581px;
+    }
+    .form__checkbox__lable {
+        font-size: 14px;
+    }
+    .form__checkbox__contract-link{
+        font-size: 14px;
+    }
+}
+
 // input:focus-visible,
 // textarea:focus-visible {
 //   outline: none;

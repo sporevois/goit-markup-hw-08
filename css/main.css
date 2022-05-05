@@ -1197,7 +1197,7 @@ textarea:focus-visible {
   margin-bottom: 30px;
 }
 
-.form__checkbox__label {
+.form__checkbox__lable {
   display: inline-block;
   font-size: 12px;
   line-height: 1.17;
@@ -1240,6 +1240,19 @@ textarea:focus-visible {
 
 .button-primary--modal-wind {
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .window {
+    width: 528px;
+    height: 581px;
+  }
+  .form__checkbox__lable {
+    font-size: 14px;
+  }
+  .form__checkbox__contract-link {
+    font-size: 14px;
+  }
 }
 
 .filter {
@@ -1295,6 +1308,12 @@ textarea:focus-visible {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
@@ -1396,7 +1415,7 @@ textarea:focus-visible {
           transform: translateY(0%);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .portfolio {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1409,7 +1428,7 @@ textarea:focus-visible {
         -ms-flex-positive: 1;
             flex-grow: 1;
     margin: 0 0 30px 0;
-    width: 354px;
+    max-width: 354px;
   }
   .portfolio__item:nth-child(2n) {
     margin-left: 30px;
@@ -1419,6 +1438,33 @@ textarea:focus-visible {
   }
   .text-wrapper {
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio__item {
+    margin: 0 30px 30px 0;
+    max-width: 370px;
+  }
+  .portfolio__item:nth-child(2n) {
+    margin-left: 0;
+  }
+  .portfolio__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .portfolio__item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+  .portfolio__link {
+    width: 370px;
+  }
+  .text-wrapper {
+    width: 370px;
   }
 }
 /*# sourceMappingURL=main.css.map */

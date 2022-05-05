@@ -49,6 +49,12 @@
         margin-bottom: 30px;
     }
 }
+@media screen and (min-width:1200px) {
+    .filter {
+        margin-bottom: 50px;
+    }
+}
+
 
 // .filter {
 //     @extend %list;
