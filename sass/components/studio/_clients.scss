@@ -9,13 +9,14 @@
   }
   &__item{
     margin-bottom: 30px;
+    width: 210px;
   }
   &__link {
     @extend %link;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 210px;
+    width: 100%;
     height: 92px;
     border: 1px solid $icon-color;
     box-sizing: border-box;
