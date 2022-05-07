@@ -117,8 +117,12 @@
 }
 
 @media screen and (min-width:1200px) {
+    .page-header {
+        border-bottom: 1px solid $border-color;
+    }
     .header-container{
         justify-content: start;
+        height: 80px;
     }
     .header-logo{
         font-size: 26px;

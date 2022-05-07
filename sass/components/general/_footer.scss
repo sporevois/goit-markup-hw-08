@@ -108,17 +108,28 @@
 }
 
 @media screen and (min-width:1200px) {
+    .page-footer {
+        display: flex;
+        align-items: center;
+        height: 252px;
+    }
     .footer-container {
         display: flex;
         align-items: baseline;
-        justify-content: space-between;
-        height: 252px;
-        padding: 60px 15px;
+        padding: 0 15px;
+    }
+    .ftr-address-wrapper{
+        display: flex;
+        flex-direction: column;
     }
     .footer-logo {
         font-size: 26px;
     }
     .ftr-address-wrapper{
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .appeal{
         text-align: left;
     }
     .subscription{
