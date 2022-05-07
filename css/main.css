@@ -1059,6 +1059,8 @@ textarea:focus-visible {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
   width: 450px;
   height: 609px;
   padding: 40px;
@@ -1388,6 +1390,7 @@ textarea:focus-visible {
 
 .portfolio__image {
   display: block;
+  width: 100%;
 }
 
 .portfolio__title {
