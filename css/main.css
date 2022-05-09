@@ -597,7 +597,8 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    padding: 0 15px;
+    height: 100%;
+    padding: 60px 15px;
   }
   .ftr-address-wrapper {
     display: -webkit-box;
