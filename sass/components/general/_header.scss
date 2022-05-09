@@ -125,20 +125,18 @@
     }
     .header-logo{
         font-size: 26px;
+        padding: 24px 0;
     }
     .nav-group{
         height: 80px;
     }
     .site-nav{
         align-items: center;
-        height: 80px;
         margin-left: 93px;
+        padding: 32px 0;
     }
     .site-nav__link{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 80px;
+        padding: 32px 0;
     }
     .site-nav__link:hover,
     .site-nav__link:focus{
@@ -146,8 +144,8 @@
     }
     .contact{
         flex-direction: row;
-        // align-items: center;
-        margin-left: 305px;
+        margin-left: auto;
+        padding: 32px 0;
     }
     .contact__link:hover,
     .contact__link:focus{
