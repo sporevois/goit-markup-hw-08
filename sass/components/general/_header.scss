@@ -1,4 +1,6 @@
-
+.page-header {
+    border-bottom: 1px solid $border-color;
+}
 .site-nav{
     display: none;
 }
@@ -117,9 +119,6 @@
 }
 
 @media screen and (min-width:1200px) {
-    .page-header {
-        border-bottom: 1px solid $border-color;
-    }
     .header-container{
         justify-content: start;
         height: 80px;
@@ -127,8 +126,19 @@
     .header-logo{
         font-size: 26px;
     }
+    .nav-group{
+        height: 80px;
+    }
     .site-nav{
+        align-items: center;
+        height: 80px;
         margin-left: 93px;
+    }
+    .site-nav__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
     }
     .site-nav__link:hover,
     .site-nav__link:focus{
