@@ -7,7 +7,7 @@
 .text-wrapper {
     display: block;
     flex-grow: 1;
-    width: 450px;
+    width: 100%;
     padding: 20px 24px;
     border: 1px solid $border-color;
     border-top: none;
@@ -42,7 +42,8 @@
 
     &__image {
         display: block;
-        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 
     &__title {
@@ -105,9 +106,6 @@
     .portfolio__link{
         width: 354px;
     }
-    .text-wrapper{
-        width: 354px;
-    }
 }
 @media screen and (min-width:1200px){
     .portfolio{
@@ -128,10 +126,6 @@
     }
     .portfolio__link {
 
-        width: 370px;
-    }
-    
-    .text-wrapper {
         width: 370px;
     }
 }

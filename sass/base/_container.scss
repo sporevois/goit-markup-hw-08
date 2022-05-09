@@ -12,9 +12,10 @@
     }
 }
 .section__container {
-    padding: 0 15px;
+    padding: 0;
     margin: 0 auto;
     overflow-x: hidden;
+    overflow-y: hidden;
     // outline: 1px solid red;
 
     @media screen and (min-width: 480px) {
@@ -29,6 +30,13 @@
     @media screen and (min-width: 1200px) {
         width: 1200px;
     }
+}
+.section--no-paddings{
+    padding-left: 0;
+    padding-right: 0;
+}
+.section__container--no-padding{
+    padding: 0;
 }
 .section__title{
     margin-top: 0;

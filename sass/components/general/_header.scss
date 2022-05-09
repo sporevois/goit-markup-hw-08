@@ -55,7 +55,6 @@
     .site-nav{
         display: flex;
         list-style: none;
-        height: 60px;
         margin: 0 0 0 88px;
         padding: 0;
     }
@@ -133,7 +132,6 @@
     .site-nav{
         align-items: center;
         margin-left: 93px;
-        padding: 32px 0;
     }
     .site-nav__link{
         padding: 32px 0;
@@ -145,6 +143,8 @@
     .contact{
         flex-direction: row;
         margin-left: auto;
+    }
+    .contact__link{
         padding: 32px 0;
     }
     .contact__link:hover,

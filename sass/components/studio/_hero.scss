@@ -6,8 +6,10 @@
   justify-content: center;
   max-width: 480px;
   height: 400px;
+  background-repeat: no-repeat;
   background-color: $reserv-bg-color;
-  background-size: contain;
+  background-size: 480px auto;
+  background-position: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/mob/Hero_480px.jpg);
   
@@ -29,35 +31,38 @@
     color: $primary-white-color;
   }
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero{
     max-width: 768px;
     height: 400px;
+    background-size: 768px auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/tab/Hero_768px.jpg);
     
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-      background-image: url(../images/tab/Hero@2x_768px.jpg);
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/tab/Hero@2x_768px.jpg);
     }
   }
 }
+
 @media screen and (min-width: 1200px){
   .hero {
     max-width: 1600px;
     height: 600px;
-    background-repeat: no-repeat;
     background-size: 1600px auto;
     background-position: center;
-    background-color: $reserv-bg-color;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/desk/Hero_1200px.jpg);
   
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-      background-image: url(../images/desk/Hero@2x_1200px.jpg);
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/desk/Hero@2x_1200px.jpg);
     }
     .hero__title{
     max-width: 696px; 
