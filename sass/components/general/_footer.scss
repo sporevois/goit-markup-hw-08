@@ -89,6 +89,11 @@
         box-sizing: border-box;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
+        transition: border-color $transitio-duration $trasition-timing-function;
+        
+        &:focus-within{
+            border-color: $primary-white-color;
+        }
     }
     &__icon {
         display: inline-block;
@@ -114,8 +119,7 @@
         transition: border-color $transitio-duration $trasition-timing-function;
     }
     .signup__mail:hover,
-    .signup__mail:focus,
-    .signup__mail:active{
+    .signup__mail:focus{
         border-color: $primary-white-color
     }
 }
