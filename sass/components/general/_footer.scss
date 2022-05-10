@@ -36,7 +36,10 @@
         line-height: 1.71;
         color: $footer-adress-color;
 
-        &:active{
+        &:hover{
+            color: $primary-white-color;
+        }
+        &:focus{
             color: $primary-white-color;
         }
     }
@@ -108,6 +111,11 @@
     .signup__mail{
         width: 450px;
     }
+    .signup__mail:hover,
+    .signup__mail:focus,
+    .signup__mail:active{
+        border-color: $primary-white-color
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -147,7 +155,6 @@
         width: 358px;
         margin-bottom: 0;
     }
-
 }
 
 // .footer-container {

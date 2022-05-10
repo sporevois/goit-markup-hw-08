@@ -64,10 +64,6 @@
         transition: background-color $transitio-duration $trasition-timing-function;
     }
 
-    &__item:active &__link {
-        background-color: $current-item-color;
-    }
-
     &__icon {
         display: inline-block;
         width: 20px;
@@ -101,6 +97,18 @@
             margin-bottom: 15px;
         }
     }
+    .socials__link:hover  {
+        background-color: $current-item-color;
+    }
+    .socials__link:focus  {
+        background-color: $current-item-color;
+    }
+    .socials__link:hover .socials__icon {
+        fill: $primary-white-color;
+    }
+    .socials__link:focus .socials__icon {
+        fill: $primary-white-color;
+    }
 }
 @media screen and (min-width:1200px) {
     .member {        
@@ -108,12 +116,6 @@
     }
     .member__item{
         width: 270px;
-    }
-    .socials__item:hover .socials__link {
-        background-color: $current-item-color;
-    }
-    .socials__item:hover .socials__icon {
-        fill: $primary-white-color;
     }
 }
 // .section {

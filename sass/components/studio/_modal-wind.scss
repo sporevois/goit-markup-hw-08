@@ -24,10 +24,8 @@ textarea:focus-visible {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    width: 450px;
-    height: 609px;
+    width: 98%;
+    height: 98%;
     padding: 40px;    
     background-color: $primary-white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -191,10 +189,15 @@ textarea:focus-visible {
             margin: 0 auto;
         }
     }
-
+@media screen and (max-width:1199px){
+    .window{
+        max-width: 450px;
+        height: 609px
+    }   
+}
 @media screen and (min-width: 1200px) {
     .window{
-        width: 528px;
+        max-width: 528px;
         height: 581px;
     }
     .form__checkbox__lable {

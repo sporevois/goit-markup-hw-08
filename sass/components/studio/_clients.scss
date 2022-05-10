@@ -21,15 +21,21 @@
     box-sizing: border-box;
     border-radius: 4px;
     transition: border-color $transitio-duration $trasition-timing-function;
-    &:active {
+    &:active,
+    &:hover,
+    &:focus {
         border-color: $current-item-color;
+        outline: none;
     }
     }
     &__icon {
         fill: $icon-color;
         transition: fill $transitio-duration $trasition-timing-function;
     }
-    &__link:active &__icon {
+    &__link:hover &__icon {
+      fill: $current-item-color;
+    }
+    &__link:focus &__icon {
       fill: $current-item-color;
     }
 }

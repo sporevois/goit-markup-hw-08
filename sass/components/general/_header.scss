@@ -74,6 +74,13 @@
         letter-spacing: 0.02em;
         text-decoration: none;
         transition: color $transitio-duration $trasition-timing-function;
+    
+        &:hover{
+            color: $current-item-color;
+        }
+        &:focus{
+            color: $current-item-color;
+        }
     }
     .site-nav__link--current{
         color: $current-item-color;
@@ -107,7 +114,10 @@
         line-height: 1.17;
         letter-spacing: 0.02em;
         transition: color $transitio-duration $trasition-timing-function;
-        
+    }
+    .contact__link:hover,
+    .contact__link:focus {
+        color: $current-item-color;
     }
     .contact__icon{
         width: 16px;
@@ -136,10 +146,6 @@
     .site-nav__link{
         padding: 32px 0;
     }
-    .site-nav__link:hover,
-    .site-nav__link:focus{
-        color: $current-item-color;
-    }
     .contact{
         flex-direction: row;
         margin-left: auto;
@@ -147,12 +153,8 @@
     .contact__link{
         padding: 32px 0;
     }
-    .contact__link:hover,
-    .contact__link:focus{
-        color: $current-item-color;
-    }
     .contact__item:first-child {
-    margin-bottom: 0px;
+        margin-bottom: 0px;
     }
     .contact__item:last-child{
         margin-left: 30px;

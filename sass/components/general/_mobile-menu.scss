@@ -13,7 +13,7 @@
     // overflow-x: hidden;
     box-sizing: border-box;
     transition: opacity $transitio-duration $trasition-timing-function,
-    transition: opacity $transitio-duration $trasition-timing-function;
+    visibility $transitio-duration $trasition-timing-function;
     
     &.is-open {
         opacity: 1;
