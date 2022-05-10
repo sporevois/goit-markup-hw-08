@@ -1,18 +1,14 @@
 .client{
   @extend %list;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   box-sizing: border-box;
-  margin: -15px;
 
-  // &__item:nth-child(2n) {
-  //   margin-left: 30px;
-  // }
   &__item{
-    margin: 15px;
-    width: 210px;
+    max-width: 210px;
+    margin: 0 auto 30px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
   &__link {
     @extend %link;
@@ -37,8 +33,25 @@
       fill: $current-item-color;
     }
 }
+@media screen and (min-width:480px){
+  .client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .client__item{
+    width: 210px;
+    margin: 15px;
+        &:last-child {
+            margin-bottom: 15px;
+          }
+  }
+}
+
 @media screen and (min-width:768px){
-  .client__link{
+  .client__item{
     width: 226px;
   }
 }
@@ -47,8 +60,11 @@
   .client{
   flex-wrap: nowrap;
   }
-  .client__link {
+  .client__item{
     width: 170px;
+  }
+  .client__link {
+
             &:hover {
                 border-color: $current-item-color;
             }

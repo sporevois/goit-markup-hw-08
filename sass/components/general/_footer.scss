@@ -73,7 +73,7 @@
     text-align: center;
 
     &__mail {
-        width: 450px;
+        width:100%;
         height: 50px;
         padding-left: 16px;
         margin-bottom: 20px;
@@ -105,19 +105,17 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    .signup__mail{
+        width: 450px;
+    }
 }
 
 @media screen and (min-width:1200px) {
-    .page-footer {
-        display: flex;
-        align-items: center;
-        height: 252px;
-    }
     .footer-container {
         display: flex;
         align-items: baseline;
+        justify-content: space-around;
         height: 100%;
-        padding: 60px 15px;
     }
     .ftr-address-wrapper{
         display: flex;
@@ -137,6 +135,7 @@
         display: flex;
         flex-direction: column;
         text-align: left;
+        flex-wrap: nowrap;
     }
     .button-primary--footer {
         margin-left: 12px;

@@ -3,7 +3,6 @@
 }
 .member{
     @extend %list;
-    margin: -15px;
     box-sizing: border-box;
     &__image{
         display: block;
@@ -27,13 +26,19 @@
         text-align: center;
     }
     &__item{
-        margin: 15px;
         max-width: 100%;
+        height: auto;
+        margin-bottom: 30px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
           0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         background-color: $primary-white-color;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
+
 }
 .member-wrapper {
         padding: 30px 0 24px
@@ -83,10 +88,18 @@
 @media screen and (min-width:768px) {
     .member{
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
+        margin: -15px;
     }
     .member__item{
+        margin: 15px;
         width: 354px; 
+
+        &:last-child{
+            margin-bottom: 15px;
+        }
     }
 }
 @media screen and (min-width:1200px) {
