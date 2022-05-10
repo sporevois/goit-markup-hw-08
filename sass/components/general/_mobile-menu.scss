@@ -12,6 +12,7 @@
     overflow: auto;
     // overflow-x: hidden;
     box-sizing: border-box;
+    transition: opacity $transitio-duration $trasition-timing-function,
     transition: opacity $transitio-duration $trasition-timing-function;
     
     &.is-open {
@@ -65,7 +66,9 @@
             line-height: 1.18;
             color: $title-text-color;
 
-            &--current{
+            &--current,
+            &:hover,
+            &:focus {
                 color: $current-item-color;
             }
         }
